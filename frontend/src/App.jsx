@@ -1,30 +1,34 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 const App = () => {
 
-  const [data, setData] = useState([])
+  const [ data, setData ] = useState([])
 
   useEffect(() => {
-    const getData = async () => {
+    const fetchData = async () => {
       try {
         const response = await axios.get('https://api-test-2tun.onrender.com/api/users')
-        setData(response)
+        setData(response.data.users)
       } catch (error) {
         console.log(error)
       }
     }
-    getData()
-    console.log(data)
+    fetchData()
   }, [])
 
-  return (
+  return(
     <>
-      <h1>Users</h1>
-      <ul>
-        
-      </ul>
+      <div>
+        <h1>Users</h1>
+        <ul>
+          {data.map(({ id, name, email }) => (
+            <li key={id}>{name} - {email}</li>
+          ))}
+        </ul>
+      </div>
     </>
   )
 }
 
-export default App
+export default App;

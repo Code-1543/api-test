@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/api/users', (req, res) => {
-    res.json(data);
+    res.json(data.users);
 })
 
 app.listen(1111, () => console.log(`SERVER IS RUNNING`))
