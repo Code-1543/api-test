@@ -1,19 +1,78 @@
 {
     "users": [
         {
-            "id": 1,
-            "name": "John",
-            "email": "John@gmail.com"
-        },
+            "users_en": [
+                {
+                    "id": 1,
+                    "name": "John",
+                    "email": "John@gmail.com"
+                },
+                {
+                    "id": 2,
+                    "name": "Susy",
+                    "email": "Susy@gmail.com"
+                },
+                {
+                    "id": 3,
+                    "name": "James",
+                    "email": "James@gmail.com"
+                }
+            ],
+            "users_th": [
+                {
+                    "id": 1,
+                    "name": "ใจดี",
+                    "email": "Jaidee@gmail.com"
+                },
+                {
+                    "id": 2,
+                    "name": "เเดง",
+                    "email": "Daeng@gmail.com"
+                },
+                {
+                    "id": 3,
+                    "name": "บี",
+                    "email": "Bee@gmail.com"
+                }
+            ]
+        }
+    ],
+    "products": [
         {
-            "id": 2,
-            "name": "Susy",
-            "email": "Susy@gmail.com"
-        },
-        {
-            "id": 3,
-            "name": "James",
-            "email": "James@gmail.com"
+            "products_en": [
+                {
+                    "product_id": 1,
+                    "product_name": "keyboard",
+                    "price": 50
+                },
+                {
+                    "product_id": 2,
+                    "product_name": "laptop",
+                    "price": 300
+                },
+                {
+                    "product_id": 3,
+                    "product_name": "macbook",
+                    "price": 450
+                }
+            ],
+            "products_th": [
+                {
+                    "product_id": 1,
+                    "product_name": "มือถือ",
+                    "price": 15000
+                },
+                {
+                    "product_id": 2,
+                    "product_name": "สายชาร์จ",
+                    "price": 500
+                },
+                {
+                    "product_id": 3,
+                    "product_name": "เคสมือถือ",
+                    "price": 100
+                }
+            ]
         }
     ]
 }
